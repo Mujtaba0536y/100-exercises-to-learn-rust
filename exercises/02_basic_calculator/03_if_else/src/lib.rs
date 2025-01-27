@@ -1,8 +1,18 @@
 /// Return `12` if `n` is even,
 /// `13` if `n` is divisible by `3`,
 /// `17` otherwise.
+
 fn magic_number(n: u32) -> u32 {
-    todo!()
+    let a: u32 = 12;
+    let b: u32 = 13;
+    let c: u32 = 17;
+    if n % 2 == 0{
+        return a;
+    } else if n % 3 == 0 {
+        return b;
+    } else {
+        return c;
+    }
 }
 
 #[cfg(test)]
