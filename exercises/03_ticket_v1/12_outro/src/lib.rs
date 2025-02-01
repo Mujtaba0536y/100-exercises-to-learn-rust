@@ -29,6 +29,15 @@ impl Order {
             unit_price
         }
     }
+    pub fn product_name(&self) -> &String{
+        &self.product_name
+    }
+    pub fn quantity(&self) -> &u32{
+        &self.quantity
+    }
+    pub fn unit_price(&self) -> &u32{
+        &self.unit_price
+    }
 }
 
 fn validiate_product_name(product_name: &String){
