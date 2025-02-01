@@ -47,6 +47,9 @@ impl Order {
     pub fn set_unit_price(&mut self, new_unit_price: u32){
         self.unit_price = new_unit_price;
     }
+    pub fn total(&self) -> u32{
+        self.quantity * self.unit_price
+    }
 }
 
 fn validiate_product_name(product_name: &String){
