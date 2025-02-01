@@ -33,7 +33,15 @@ impl Ticket {
             status,
         }
     }
-
+    pub fn set_title(&mut self, new_title: String){
+        self.title = new_title;
+    }
+    pub  fn set_description(&mut self, new_description: String){
+        self.description = new_description;
+    }
+    pub fn set_status(&mut self, new_status: String){
+        self.status = new_status
+    }
     pub fn title(&self) -> &String {
         &self.title
     }
@@ -45,6 +53,7 @@ impl Ticket {
     pub fn status(&self) -> &String {
         &self.status
     }
+    
 }
 
 #[cfg(test)]
