@@ -7,15 +7,10 @@ struct Ticket {
 }
 
 impl PartialEq for Ticket {
-    fn eq(&self, other: &Ticket) -> bool {
-        self.title = other.title;
-        self.description = other.description;
-        self.status = other.status;
-    }
-    fn ne(&self, other: &Ticket) -> bool {
-        self.title = other.title;
-        self.description = other.description;
-        self.status = other.status;
+    fn eq(&self, other: &Self) -> bool {
+        self.title == other.title &&
+        self.description == other.description &&
+        self.status == other.status
     }
 }
 
