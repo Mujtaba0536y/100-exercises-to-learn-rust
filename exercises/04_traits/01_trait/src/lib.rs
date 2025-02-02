@@ -2,7 +2,7 @@
 // even, otherwise `false`.
 //
 // Then implement the trait for `u32` and `i32`.
-
+#[allow(dead_code)]
 trait IsEven {
     fn is_even(self) -> bool;
 }
